@@ -1,6 +1,7 @@
 // exercise API data
 const HOME_EXERCISE_URL =
   "https://exercisedb.p.rapidapi.com/exercises?limit=10";
+
 const EXERCISE_FETCH_OPTIONS = {
   method: "GET",
   headers: {
@@ -83,3 +84,46 @@ const updateHomeExercisesDom = (exercises) => {
     exercisesContainer.appendChild(exerciseItem);
   });
 };
+
+// functionality to slide categories using arrows
+
+const categoryLeftArrow = document.getElementById("category-left-arrow");
+const categoryRightArrow = document.getElementById("category-right-arrow");
+const categoriesContainer = document.getElementById("categories-container");
+const categoryScrollWidth =
+  document.querySelector(".category_container").scrollWidth * 2;
+
+categoryLeftArrow.addEventListener("click", () => {
+  categoriesContainer.scrollBy({
+    left: -categoryScrollWidth,
+    behavior: "smooth",
+  });
+});
+categoryRightArrow.addEventListener("click", () => {
+  categoriesContainer.scrollBy({
+    left: categoryScrollWidth,
+    behavior: "smooth",
+  });
+});
+
+// functionality to slide exercises using arrows
+
+const exerciseLeftArrow = document.getElementById("exercise-left-arrow");
+const exerciseRightArrow = document.getElementById("exercise-right-arrow");
+const exercisesContainer = document.getElementById("exercises-container");
+
+exerciseLeftArrow.addEventListener("click", () => {
+  console.log("clicked");
+  exercisesContainer.scrollBy({
+    left: -500,
+    behavior: "smooth",
+  });
+});
+
+exerciseRightArrow.addEventListener("click", () => {
+  console.log("clicked");
+  exercisesContainer.scrollBy({
+    left: 500,
+    behavior: "smooth",
+  });
+});

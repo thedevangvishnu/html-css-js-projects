@@ -345,3 +345,14 @@ nav {
   margin-top: 1rem;
   /* align-self: flex-start; */
 }
+
+.show_all {
+  align-self: center;
+  background-color: var(--highlight-color);
+  margin-top: 4rem;
+}
+
+.show_all:hover {
+  background-color: var(--background-color);
+  color: var(--heading-color);
+}
