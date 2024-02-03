@@ -108,7 +108,7 @@ nav {
 .hero_section {
   position: relative;
   width: 100%;
-  height: cal(90vh - var(--header-height));
+  height: cal(100vh - var(--header-height));
   /* padding-top: 0rem; */
   padding-bottom: 4rem;
 }
@@ -170,7 +170,7 @@ nav {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-block: 4rem;
+  padding-block: 3rem;
   padding-inline: 5rem;
   background-color: var(--heading-color);
   color: white;
@@ -183,12 +183,12 @@ nav {
 }
 
 .search_heading h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 
 .search_input_container {
-  margin-block: 3rem;
+  margin-block: 2rem;
   display: flex;
   flex-direction: row;
   width: 60%;
@@ -211,10 +211,9 @@ nav {
   box-shadow: none;
 }
 
-.categories_arrows {
+.arrows {
   display: flex;
   align-self: flex-end;
-  padding-right: 2rem;
   gap: 1.5rem;
 }
 
@@ -234,7 +233,7 @@ nav {
 .categories_container {
   width: 100%;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   overflow: hidden;
   padding: 1rem 2rem 2rem 2rem;
 }
@@ -276,4 +275,73 @@ nav {
 
 .category_container a:hover .category_name {
   color: var(--heading-color);
+}
+
+.search_results {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--background-color);
+  margin-top: 1rem;
+}
+
+/* exercises section */
+
+.exercises_section {
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.exercises_container {
+  display: flex;
+  overflow: hidden;
+  gap: 4rem;
+}
+
+.exercise_item {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  cursor: pointer;
+}
+
+.exercise_gif {
+  width: 180px;
+  height: 180px;
+  align-self: center;
+}
+
+.exercise_gif img {
+  width: 100%;
+  height: 100%;
+}
+
+.exercise_tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.exercise_tags p {
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  background-color: var(--highlight-color);
+  border-radius: 1rem;
+  color: white;
+}
+
+.exercise_name {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  /* align-self: flex-start; */
 }

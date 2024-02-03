@@ -32,7 +32,9 @@
         <div class="nav_menu_container">
           <ul class="nav_menu_items">
             <li class="nav_menu_item"><a href="index.html">Home</a></li>
-            <li class="nav_menu_item"><a href="#exercises">Exercises</a></li>
+            <li class="nav_menu_item">
+              <a href="#search-exercises">Exercises</a>
+            </li>
             <li class="nav_menu_item"><a href="#about">About</a></li>
           </ul>
         </div>
@@ -60,7 +62,7 @@
 
           <!-- button -->
           <div class="left_button">
-            <a href="#exercises"><button>EXPLORE</button></a>
+            <a href="#search-exercises"><button>EXPLORE</button></a>
           </div>
         </div>
 
@@ -74,7 +76,7 @@
     </section>
 
     <!-- search section -->
-    <section class="search_section" id="exercises">
+    <section class="search_section" id="search-exercises">
       <div class="search_section_div container">
         <!-- heading -->
         <div class="search_heading">
@@ -92,11 +94,11 @@
         </div>
 
         <!-- arrow icons -->
-        <div class="categories_arrows">
-          <div class="left_arrow">
+        <div class="arrows">
+          <div class="left_arrow" id="category-left-arrow">
             <img src="./assets/icons/left-arrow.png" alt="left-arrow" />
           </div>
-          <div class="right_arrow">
+          <div class="right_arrow" id="category-right-arrow">
             <img src="./assets/icons/right-arrow.png" alt="right-arrow" />
           </div>
         </div>
@@ -176,6 +178,22 @@
           </li>
           <!-- all, chest, back, legs, arms, waist, neck, cardio -->
         </ul>
+
+        <h4 class="search_results">Showing results</h4>
+        <!-- showing exercises result -->
+        <div class="exercises_section" id="exercises-section">
+          <div class="arrows">
+            <div class="left_arrow" id="exercise-left-arrow">
+              <img src="./assets/icons/left-arrow.png" alt="left-arrow" />
+            </div>
+            <div class="right_arrow" id="exercise-right-arrow">
+              <img src="./assets/icons/right-arrow.png" alt="right-arrow" />
+            </div>
+          </div>
+          <ul class="exercises_container" id="exercises-container">
+            <!-- exercise -->
+          </ul>
+        </div>
       </div>
     </section>
 
